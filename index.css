@@ -1,0 +1,226 @@
+/* обнуляем все настройки по умолчанию */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* меняет подсчет ширины блока для удобства */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* убираем линии обводки у браузеров */
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+/* делаем значения блочными */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+/* уравниваем поведение шрифтов и элементов для разных браузеров */
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -mos-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+/* просим теги наследовать семейство шрифта */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+/* убираем некоторые особенности в разных браузерах */
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+/* обнуляем заголовки h */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ------------------------------------ */
+
+body {
+  background: rgb(67, 17, 91);
+}
+
+.wrapper {
+  max-width: 844px;
+  width: 100%;
+  margin: 50px auto;
+  border-radius: 50px;
+  background: rgb(43, 0, 64);
+}
+
+.top {
+  padding-top: 52px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.top__item {
+  width: 155px;
+  height: 139px;
+  padding: 14px 25px 14px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: rgb(72, 210, 254);
+}
+
+.top__item:nth-child(2) {
+  background: rgb(188, 219, 249);
+}
+
+.top__item:nth-child(3) {
+  background: rgb(226, 190, 0);
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background: rgb(67, 17, 91);
+  cursor: pointer;
+  color: rgb(72, 210, 254);
+  font-family: Fredoka One;
+  font-size: 94px;
+  font-weight: 400;
+  line-height: 114px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.x {
+  color: rgb(72, 210, 254);
+}
+
+.o {
+  color: rgb(226, 190, 0);
+}
+
+.bottom {
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.clear__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.296);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.clear__modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.clear__modal .clear__modal-container {
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(226, 190, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.clear__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.clear__btn {
+  border-radius: 10px;
+  background: rgb(188, 219, 249);
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0%;
+  text-align: center;
+}
